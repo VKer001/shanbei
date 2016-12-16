@@ -30,8 +30,7 @@ body {
 
 .top-leaning {
     float: left;
-    width: 40%
-    height: 100%;
+    padding-left: 40px;
 }
 
 .vker-top a {
@@ -170,10 +169,27 @@ h4{
     background-color: lightgrey;
     color: #333;
     padding-bottom: 20px;
+    margin: 80px;
+    text-align: center;
+    line-height: 1.8em;
 }
 
-.vker-footer a{
+.vker-footer ul{
+    list-style:none
+}
+
+.footer-about a{
     cursor: pointer;
     color: black;
     text-decoration: none;
+}
+
+.about-partner img{
+    width: 100px;
+    height: 37.7px;
+}
+
+.about-use,.about-shanbei,.about-wiki,.about-partner {
+    display: inline-table;
+    margin: 50px 100px 50px 100px;
 }
