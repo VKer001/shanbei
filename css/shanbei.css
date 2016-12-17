@@ -58,6 +58,16 @@ body {
 .center-logo img{
     width: 130px;
 
+    -webkit-transition:all 1s ease-in;
+	-moz-transition:all 1s ease-in;
+	transition:all 1s ease-in;
+}
+
+.center-logo  img:hover{
+    transition: transform 1.5s;
+    transform: rotateY(360deg) scale(1.10);
+    -webkit-transform: rotateY(360deg) scale(1.10);
+    -moz-transform: rotateY(360deg) scale(1.10);
 }
 
 /*轮播图*/
@@ -97,9 +107,9 @@ body {
     right: 80px;
 }
 .vker-slide-img {
-    -webkit-transition:all 0.5s ease-in;
-	-moz-transition:all 0.5s ease-in;
-	transition:all 0.5s ease-in;
+    -webkit-transition:all 1s ease-in;
+	-moz-transition:all 1s ease-in;
+	transition:all 1s ease-in;
 
     margin: 0 auto;
     display: none;
@@ -162,6 +172,23 @@ h4{
     color: #666;
 }
 
+@keyframes springish {
+  0.00% {transform: translate3d(22.68px, 0, 0) scale(0.7732);}
+  3.27% {transform: translate3d(35.49px, 0, 0) scale(0.6451);}
+  17.08% {transform: translate3d(-10.97px, 0, 0) scale(1.1097);}
+  30.90% {transform: translate3d(3.39px, 0, 0) scale(0.9661);}
+  44.72% {transform: translate3d(-1.05px, 0, 0) scale(1.0105);}
+  58.54% {transform: translate3d(0.32px, 0, 0) scale(0.9968);}
+  72.36% {transform: translate3d(-0.10px, 0, 0) scale(1.001);}
+  86.18% {transform: translate3d(0.03px, 0, 0) scale(0.9997);}
+  100.00% {transform: translate3d(-0.01px, 0, 0) scale(1.0001);}
+}
+.vker-content img:hover {
+  animation: springish;
+  animation-iteration-count: infinite;
+  animation-duration: 2.43s;
+  animation-timing-function: cubic-bezier(0.445,  0.050, 0.550, 0.950);
+}
 
 /*关于扇贝*/
 .vker-footer {
